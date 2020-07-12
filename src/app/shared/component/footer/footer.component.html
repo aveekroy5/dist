@@ -1,0 +1,42 @@
+<div class="footer">
+    <div class="container">
+      <div class="footer-container row col-12">
+          <div class="Section-1 col-12 col-sm-4">
+            <p>Minibus Den Haag deel van Taxi Centrale Groep</p>
+            <p>Met Onze Taxi groep kunnen wij u veel beter van dienst zijn. Sneller Veiliger en voordeliger</p>
+            
+          </div>
+          <div class="Section-2 col-12 col-sm-4">
+            <ul>
+              <li>Voor Alle taxi ritten in Den Haag on omgeving</li>
+              <li>Correcte Chauffeurs</li>
+              <li>Luxe sedan</li>
+              <li>Royale Mini-bus</li>
+              <li>Speciale Taxi To Airport Tarieven</li>
+            </ul>
+  
+            <a href="#" class="legal">Lees: Disclaimer en AlgemeneVoorwaarden</a>
+          </div>
+          <div class="Section-3 col-12 col-sm-4">
+            <h4>CONTACT TAXI BOEKING</h4>
+            <p>Apeldoornselaan 152<br/>
+              2573 LS Den Haag<br/>
+              KVK<br/>
+              070 6666 555<br/><br/>
+              info@taxibookingdenhaag.nl</p>
+          </div>
+      </div>
+    </div>
+    <div class="chat-bot">
+      <div class="profile" [ngClass]="showChotbot ? 'active' : ''">
+        <i class="fa fa-user" aria-hidden="true" (click)="toggleMenu()"></i>
+        <!-- <i class="fa fa-whatsapp" aria-hidden="true"></i> -->
+        
+        <a href="tel:+31706666555"><i class="fa fa-phone" aria-hidden="true"></i></a>
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=+31633191940"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+        <a (click)="toggleMenuandroute()" routerLink="/contactus"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <a (click)="toggleMenuandroute()" routerLink="/book"><i class="fa fa-car" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  
+  </div>

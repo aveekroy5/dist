@@ -1,0 +1,25 @@
+.route-car{
+    position: absolute;
+    left: -300px;
+    top: 100px;  
+}
+.route-car img{
+    width:300px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }

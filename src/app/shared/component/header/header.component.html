@@ -1,0 +1,95 @@
+<div class="header pb-4" [ngStyle]="homeHeader?{'height': 'auto'} : {'height': 'auto'}">
+    <div class="container-lg">
+      <div class="info-container col-12 col-lg-7 row  p-0">
+        <div class="contact-container col-12 col-lg-7">
+            <span><a href="tel:+31706666555"><i class="fa fa-phone"></i> 706666555</a></span>
+            <span> <a target="_blank" href="https://api.whatsapp.com/send?phone=+31633191940"><i class="fa fa-whatsapp" aria-hidden="true"></i> 633191940</a></span>
+            <span><a href="mailto:Gsnay2013@gmail.com"><i class="fa fa-envelope"></i> Gsnay2013@gmail.com</a></span>
+        </div>
+        <div class="social-media-container col-12 col-lg-5">
+          <i class="fa fa-facebook-square"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-google-plus"></i>
+          <i class="fa fa-youtube"></i>
+          <i class="fa fa-linkedin"></i>
+          <i class="fa fa-skype"></i>
+        </div>
+      </div>
+      <div style="clear: both;"></div>
+      <div class="col-12 row p-0 m-0 logo-menu-container">
+        <div class="logo col-12 col-lg-3"><a routerLink="/home"><img src="../../../../assets/images/logo6.png"/></a></div>
+        <div class="menu col-12 col-lg-9 p-0 m-0">
+          <div class="hamburger-menu" #toggleButton><i class="fa fa-bars" aria-hidden="true" (click)="toggleMenu()"></i></div>
+          <div class="menu-container" [ngClass]="isMenuOpen ? 'active' : ''">
+            <ul routerLinkActive="active-link">
+              <li><a routerLink="/book" routerLinkActive="active" (click)="toggleMenu()">TAXI BOEKEN</a></li>
+              <li><a routerLink="/rate" routerLinkActive="active" (click)="toggleMenu()">FIXED RATE</a></li>
+              <li><a routerLink="/airport" routerLinkActive="active" (click)="toggleMenu()">AIRPORT TAXI</a></li>
+              <li><a routerLink="/testimonial" routerLinkActive="active" (click)="toggleMenu()">WAT ANDEREN ZEGGEN</a></li>
+              <li><a routerLink="/advantage" routerLinkActive="active" (click)="toggleMenu()">UW VOORDEEL</a></li>
+              <li><a routerLink="/contactus" routerLinkActive="active" (click)="toggleMenu()">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="booking-form-container col-12 col-lg-7 mt-4 p-0" *ngIf="homeHeader">
+        <mat-tab-group mat-stretch-tabs>
+          <mat-tab label="Snel boeken">
+            <form [formGroup]="bookingForm" (ngSubmit)="onSubmit()">
+            <div class="col-12 row booking-form p-0 m-0">
+              
+                <p class="pl-3">Hier maakt u een reservering voor een standaard rit van adres n</p>
+                <div class="form-group col-12 col-md-6">
+                  <label >Naam(*)</label>
+                  <input type="text" class="form-control"  formControlName="bookingname" placeholder="Enter Your Name" required >
+                  
+                </div>
+                <div class="form-group col-12 col-md-6">
+                  <label>E-mail(*)</label>
+                  <input type="text" class="form-control" formControlName="bookingemail"placeholder="Enter email" required >
+                  
+                </div>
+                <p class="pl-3">geef een mobiel telefoon nummer , dat op de dag van uw aanvraag</p>
+                <div class="form-group col-12 col-md-6">
+                  <label >Mobile Nummer(*)</label>
+                  <input type="text" class="form-control" formControlName="bookingphone" placeholder="Enter Phone No" required >
+                  
+                </div>
+                <div class="form-group col-12 col-md-6">
+                  <label>Extra Mobiel Nummer</label>
+                  <input type="text" class="form-control" formControlName="bookingephone" placeholder="Enter Phone No">
+                  
+                </div>
+                <div class="form-group col-12 col-md-6">
+                  <label>Geef Rit Datum Plus Ophaal Tijd Op(*)</label>
+                  <input type="datetime-local" class="form-control" formControlName="bookingDate" required >
+                  
+                </div>
+                <div class="form-group col-12 col-md-6">
+                  <button type="submit" class="book-now">Verzend aan Taxi Boeking Den Haag</button>
+                </div>
+              
+              </div>
+            </form>
+          </mat-tab>
+          <mat-tab label="snel contact"> 
+            <app-contact-form></app-contact-form> 
+          </mat-tab>
+        </mat-tab-group>
+      </div>
+    </div>
+
+    <!-- <div class="header-border col-12 p-0">
+      <img class=" col-12 p-0" src="../../../../assets/images/Layer 11.png"/>
+    </div> -->
+  </div>
+  <div class="header-border col-12 p-0">
+    <!-- <img class=" col-12 p-0" src="../../../../assets/images/Layer 11.png"/> -->
+  </div>
+  <!-- <li><a routerLink="/" routerLinkActive="active">home</a></li>
+    <li><a routerLink="/book" routerLinkActive="active">Book a Taxi</a></li>
+    <li><a routerLink="/rate" routerLinkActive="active">Rate Chart</a></li>
+    <li><a routerLink="/testimonial" routerLinkActive="active">Testimonial</a></li>
+    <li><a routerLink="/aboutus" routerLinkActive="active">About Us</a></li>
+    <li><a routerLink="/contactus" routerLinkActive="active">Contact US</a></li> -->

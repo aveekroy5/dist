@@ -1,0 +1,8 @@
+.route-car{
+    position: absolute;
+    left: -300px;
+    top: 100px;  
+}
+.route-car img{
+    width:300px;
+}

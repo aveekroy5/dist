@@ -1,0 +1,47 @@
+/* Footer */
+.footer{
+    background-color: #191919;
+}
+
+.footer-container{
+    padding: 36px 0;
+    color: #FFFFFF;
+}
+.Section-1{
+    text-align: center;
+}
+.Section-2 ul{
+    list-style: none;
+}
+.Section-2 ul li::before{
+    content: "♦";
+    color: #FFC000;
+    font-weight: bold;
+    display: inline-block; 
+    width: 2em;
+    margin-left: -2em;
+}
+.legal{
+    color: #FFC000; 
+}
+.profile{
+    width: 240px;
+    position: fixed;
+    bottom: 50px;
+    background-color: #ffc000;
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    z-index: 99;
+    right: -200px;
+}
+.profile.active{
+    right: 0;
+}
+.profile i{
+    font-size: 25px;
+    cursor: pointer;
+}

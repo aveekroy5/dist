@@ -1,0 +1,100 @@
+<div id="your-advantage" class="page-container">
+  <div class="container">
+      <div class="section-header col-12">
+          <span class="header-text">Booking</span>
+      </div>
+      <div class="Section-body col-12 row p-0 m-0">
+          <div class="col-12">
+            
+            <form [formGroup]="detailbookingForm" (ngSubmit)="onSubmit()">
+              <div class="col-12 row booking-form">
+
+                <div class="form-group col-12">
+                  <label for="bookingType">Booking Type:</label>
+                  <select class="form-control" id="bookingType" formControlName="bookingtype">
+                    <option [selected]="true">Address To Address Booking</option>
+                    <option>Hour Booking</option>
+                    <option>Children Booking</option>
+                    <option>Group Booking</option>
+                  </select>
+                </div>
+                <div class="form-group col-12 col-md-6">
+                  <label >Naam(*)</label>
+                  <input type="text" class="form-control"  formControlName="bookingname" placeholder="Enter Your Name" >
+                  
+                </div>
+                  <div class="form-group col-12 col-md-6">
+                    <label>E-mail(*)</label>
+                    <input type="text" class="form-control" formControlName="bookingemail"placeholder="Enter email" >
+                    
+                  </div>
+                  <p class="pl-3 col-12">geef een mobiel telefoon nummer , dat op de dag van uw aanvraag</p>
+                  <div class="form-group col-12 col-md-6">
+                    <label >Mobile Nummer(*)</label>
+                    <input type="text" class="form-control" formControlName="bookingphone" placeholder="Enter Phone No" >
+                    
+                  </div>
+                  <div class="form-group col-12 col-md-6">
+                    <label>Extra Mobiel Nummer</label>
+                    <input type="text" class="form-control" formControlName="bookingephone" placeholder="Enter Phone No">
+                    
+                  </div>
+                  <div class="form-group col-12 col-md-6">
+                    <label>Geef Rit Datum Plus Ophaal Tijd Op(*)</label>
+                    <input type="datetime-local" class="form-control" formControlName="bookingDate" >
+                    
+                  </div>
+                  <p class="sub-header col-12">RIT GEGEVENS</p>
+                  <div class="form-group col-12 col-md-6">
+                    <label>Aantal personen(*)</label>
+                    <input type="text" class="form-control" formControlName="bookingnoofperson"placeholder="No of persons" >
+                    
+                  </div>
+                  <div class="form-group col-12 col-md-6">
+                    <label >Extra baggage (*)</label>
+                    <div class="col-12">
+                      <label class="radio-inline"><input type="radio" name="optradio" checked>geen bagage</label>
+                      <label class="radio-inline"><input type="radio" name="optradio">1 koffer extra</label>
+                      <label class="radio-inline"><input type="radio" name="optradio">2 koffer extra</label>
+                      <label class="radio-inline"><input type="radio" name="optradio">3 koffer extra</label>
+                    </div>
+
+                                        
+                  </div>
+                  <p class="sub-header col-12">Geef hieronder het adres waar wij u moeten ophalen</p>
+                  <div class="form-group col-12 col-md-6">
+                    <label>Ophaaladres</label>
+                    <input type="text" class="form-control" formControlName="pickupaddress" placeholder="pickup address">
+                    
+                  </div>
+                  <div class="form-group col-12 col-md-6">
+                    <label>Postcode</label>
+                    <input type="text" class="form-control" formControlName="pickupzip" placeholder="pickup zip code" >
+                    
+                  </div>
+                  <p class="sub-header col-12">Geef hieronder het adres waar u naar toe moet</p>
+                  <div class="form-group col-12 col-md-6">
+                    <label>Drop-adres</label>
+                    <input type="text" class="form-control" formControlName="dropaddress" placeholder="drop address">
+                    
+                  </div>
+                  <div class="form-group col-12 col-md-6">
+                    <label>postcode</label>
+                    <input type="text" class="form-control" formControlName="dropzip" placeholder="Drop zip code" >
+                    
+                  </div>
+                  <div class="form-group col-12">
+                    <label>eventuele bijzonderheden</label>
+                    <textarea name="" class="form-control" formControlName="bookingnote" id=""></textarea>
+                  </div>
+
+                  <div class="form-group col-12">
+                    <button type="submit" class="book-now">Verzend aan Taxi Boeking Den Haag</button>
+                  </div>
+                
+                </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    margin:0;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.page-container{
+    padding-bottom: 50px;
+}
+
+.section-header {
+    text-align: center;
+    font-size: 27px;
+    padding: 57px 0;
+}
+
+.sub-header{
+    color: #ffc000;
+    font-size: 18px;
+}
+
+button{
+    background: #ffc000;
+    border: 2px solid #a7820e;
+    padding: 2px 6px;
+}
+
+.route-car{
+    position: absolute;
+    left: -300px;
+    top: 100px;  
+}
+.route-car img{
+    width:300px;
+}

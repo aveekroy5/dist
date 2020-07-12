@@ -1,0 +1,7 @@
+<app-header></app-header>
+<!-- <router-outlet [@routeAnimations]="prepareRoute(outlet)"></router-outlet> -->
+<div [style.min-height.px]="400" [@routeAnimations]="o && o.activatedRouteData 
+      && o.activatedRouteData['animation']">
+    <router-outlet #o="outlet"></router-outlet>
+</div>
+<app-footer></app-footer>

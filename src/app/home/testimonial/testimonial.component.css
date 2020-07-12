@@ -1,0 +1,18 @@
+.testimonial-container{
+    margin-bottom: 20px;;
+}
+.testimonial-body {
+    padding-top: 10px;
+}
+.testimonial-body .name{
+    font-size: 20px;
+    font-weight: 500;
+}
+.testimonial-body .date{
+    font-weight: 500;
+    font-size: 15px;
+    color: #4e4d4d;
+}
+.testimonial-body .rating .fa{
+    color: gold;
+}
